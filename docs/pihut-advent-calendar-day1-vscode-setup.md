@@ -23,7 +23,7 @@
 
 ### 1a. Install VSCode
 
-Download and install from: https://code.visualstudio.com
+Download and install from: <https://code.visualstudio.com>
 
 ### 1b. Make Sure Python is on Your System
 
@@ -35,7 +35,7 @@ Open a terminal and check:
 python --version
 ```
 
-If you don't have it, download from https://www.python.org/downloads/ and make
+If you don't have it, download from <https://www.python.org/downloads/> and make
 sure to tick **"Add Python to PATH"** during installation.
 
 ### 1c. Install pyserial
@@ -53,10 +53,10 @@ pip install pyserial
 This step loads the MicroPython interpreter onto your Pico. You only need to do
 this once (unless you want to update the firmware later).
 
-### Step-by-step:
+### Step-by-step
 
 1. **Download the MicroPython UF2 firmware** for the Raspberry Pi Pico from:
-   https://micropython.org/download/RPI_PICO/
+   <https://micropython.org/download/RPI_PICO/>
 
    Grab the latest `.uf2` file (e.g. `RPI_PICO-20251209-v1.27.0.uf2`).
 
@@ -87,6 +87,7 @@ this once (unless you want to update the firmware later).
 4. Click **Install** on the **MicroPico** extension (by paulober).
 
 > This extension was previously called "Pico-W-Go". It provides:
+>
 > - Auto-completion for MicroPython / Pico APIs
 > - Built-in REPL terminal to talk to your Pico
 > - Run and upload buttons in the status bar
@@ -105,6 +106,7 @@ this once (unless you want to update the firmware later).
 
 You should now see **Pico Connected** in the VSCode status bar at the bottom.
 If it says "Pico Disconnected", make sure:
+
 - The USB cable is plugged in (and is a data cable, not charge-only)
 - The firmware was flashed correctly (Part 2)
 - You have `pyserial` installed (Part 1c)
@@ -122,6 +124,7 @@ print("This is my Pico talking")
 ```
 
 **To run it:**
+
 - Click the **Run** button in the VSCode status bar at the bottom, OR
 - Press `Ctrl+Shift+P` > **"MicroPico: Run current file on Pico"**
 
@@ -206,20 +209,24 @@ method is perfectly fine.
 ## Troubleshooting
 
 ### "Pico Disconnected" in the status bar
+
 - Check your USB cable is a **data cable** (some cheap cables are charge-only)
 - Make sure MicroPython firmware is installed (Part 2)
 - Try unplugging and replugging the Pico
 - Run `pip install pyserial` again to make sure it's installed
 
 ### The RPI-RP2 drive doesn't appear
+
 - Make sure you're **holding BOOTSEL while plugging in the USB**
 - Try a different USB port
 - Try a different USB cable
 
 ### Code runs but nothing happens with the LED
+
 - Double-check you're using **Pin 25** - that's the onboard LED on the Pico H.
 
 ### "No module named 'machine'"
+
 - You're running the code on your computer's Python, not on the Pico. Make sure
   you use **"MicroPico: Run current file on Pico"** and not the regular Python
   run button.
