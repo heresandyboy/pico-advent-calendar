@@ -31,7 +31,7 @@ electronics - no Thonny required.
 With the Pico connected via USB and **Pico Connected** showing in the VSCode
 status bar:
 
-- **Run on Pico:** Click the Run button in the status bar, or
+- **▶ Run on Pico:** Click the `Run` button in the status bar, or
   `Ctrl+Shift+P` > **MicroPico: Run current file on Pico**
 - **Stop execution:** Click the Stop button, or
   `Ctrl+Shift+P` > **MicroPico: Stop execution**
@@ -46,8 +46,12 @@ status bar:
 - Installed VSCode and the MicroPico extension
 - Connected to the Pico from VSCode and ran [`hello.py`](hello.py) and
   [`led.py`](led.py) — turning on the built-in LED on the Pico, then figuring
-  out what code to change to switch it on and off: `onboardLED.value(0)` vs
-  `onboardLED.value(1)`
+  out what code to change to switch it on and off: 
+  
+  ```python
+  onboardLED.value(0) # built-in LED OFF
+  onboardLED.value(1) # built-in LED ON
+  ```
 
 ### Part 2 - Let's Get Blinky
 
@@ -56,14 +60,19 @@ status bar:
 - Built the circuit: three LEDs with current-limiting resistors wired to GPIO
   pins 18, 19, and 20
 - Ran [`blinky.py`](blinky.py) to light all three LEDs at once
-- Identified which GPIO pin controlled which LED colour by commenting out two
+- James worked to identify which GPIO pin controlled which LED colour by commenting out two
   of the three LED lines, running the script to light a single LED, noting its
   colour, then repeating for each — correctly naming each variable by its
   colour in the code
 - Ran [`flash.py`](flash.py) to flash all LEDs on and off 10 times using a
   `while` loop
 - Ran [`chase.py`](chase.py) to sequence the LEDs one at a time in a
-  red → amber → green chase effect
+  red → amber → green chase effect. The code sample left the green LED on at the end of the sequence.
+  >James and I worked together to figure out how to ensure the green LED was switched off at the end of the loop, we added the following code at the end of the program to switch off the green LED
+
+  ```python
+  green.value(0)  # Turn off green after loop ends
+  ```
 
 ## Credits
 
