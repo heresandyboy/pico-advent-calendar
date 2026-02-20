@@ -60,10 +60,15 @@ status bar:
 - Built the circuit: three LEDs with current-limiting resistors wired to GPIO
   pins 18, 19, and 20
 - Ran [`blinky.py`](blinky.py) to light all three LEDs at once
-- James worked to identify which GPIO pin controlled which LED colour by commenting out two
-  of the three LED lines, running the script to light a single LED, noting its
-  colour, then repeating for each — correctly naming each variable by its
-  colour in the code
+  > James worked to identify which GPIO pin controlled which LED colour by commenting out two
+    of the three LED lines, running the script to light a single LED, noting its colour, then repeating for each — correctly naming each variable by its colour in the code
+
+    ```python
+    green = Pin(18, Pin.OUT)
+    amber = Pin(19, Pin.OUT)
+    red = Pin(20, Pin.OUT)
+    ```
+
 - Ran [`flash.py`](flash.py) to flash all LEDs on and off 10 times using a
   `while` loop
 - Ran [`chase.py`](chase.py) to sequence the LEDs one at a time in a
