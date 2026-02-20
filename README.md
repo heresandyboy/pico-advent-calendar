@@ -57,8 +57,7 @@ status bar:
 
 ![Completed Day 2 circuit with three LEDs wired to the Pico](docs/images/day2-complete-circuit.jpg)
 
-- Built the circuit: three LEDs with current-limiting resistors wired to GPIO
-  pins 18, 19, and 20
+- James built the circuit: three LEDs with current-limiting resistors wired to GPIO pins 18, 19, and 20 by carefully following the image above.
 - Ran [`blinky.py`](blinky.py) to light all three LEDs at once
   > James worked to identify which GPIO pin controlled which LED colour by commenting out two
     of the three LED lines, running the script to light a single LED, noting its colour, then repeating for each — correctly naming each variable by its colour in the code
