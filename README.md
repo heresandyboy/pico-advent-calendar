@@ -36,6 +36,25 @@ status bar:
 - **Stop execution:** Click the Stop button, or
   `Ctrl+Shift+P` > **MicroPico: Stop execution**
 
+## Progress
+
+### Day 1 - VSCode + MicroPython Setup
+- Flashed MicroPython firmware onto the Pico H
+- Installed VSCode and the MicroPico extension
+- Connected to the Pico from VSCode and ran a first script
+
+### Day 2 - Let's Get Blinky
+- Built the circuit: three LEDs with current-limiting resistors wired to GPIO
+  pins 18, 19, and 20
+- Ran `blinky.py` to light all three LEDs at once
+- Identified which GPIO pin controlled which LED colour by commenting out two
+  of the three LED lines, running the script to light a single LED, noting its
+  colour, then repeating for each — correctly naming each variable by its
+  colour in the code
+- Ran `flash.py` to flash all LEDs on and off 10 times using a `while` loop
+- Ran `chase.py` to sequence the LEDs one at a time in a red → amber → green
+  chase effect
+
 ## Credits
 
 Original tutorials by [The Pi Hut](https://thepihut.com/pages/maker-advent-2022-guides).
