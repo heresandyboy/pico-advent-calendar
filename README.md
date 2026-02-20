@@ -5,7 +5,7 @@ A VSCode-based adaptation of the
 tutorials, reworked to use **VSCode + MicroPico** instead of Thonny.
 
 Built to teach my nephew how to program a **Raspberry Pi Pico H** with basic
-electronics - no Thonny required.
+electronics using VSCode with MicroPico plugin to control the Pi Pico device.
 
 ## Hardware
 
