@@ -100,9 +100,9 @@ this once (unless you want to update the firmware later).
 1. Create a new folder for your advent calendar work, e.g. `pico-advent`.
 2. In VSCode: **File > Open Folder** and select that folder.
 3. Press `Ctrl+Shift+P` to open the Command Palette.
-4. Type **"MicroPico"** and select **"MicroPico: Configure project"**.
-5. You should see a success notification. This creates some config files in
-   your project for autocomplete and board communication.
+4. Type **"MicroPico"** and select **"MicroPico: Initialize MicroPico project"**.
+5. You should see a success notification. This imports MicroPython stubs for
+   autocomplete and adds project settings for board communication.
 
 You should now see **Pico Connected** in the VSCode status bar at the bottom.
 If it says "Pico Disconnected", make sure:
@@ -174,7 +174,7 @@ available commands. The most useful ones:
 | **MicroPico: Upload current file to Pico** | Saves the file permanently to the Pico's filesystem |
 | **MicroPico: Upload project to Pico** | Uploads all project files to the Pico |
 | **MicroPico: Delete all files from board** | Wipes the Pico's filesystem |
-| **MicroPico: Configure project** | Initialises a project with autocomplete stubs |
+| **MicroPico: Initialize MicroPico project** | Initialises a project with autocomplete stubs |
 
 ### Run vs Upload - What's the Difference?
 
