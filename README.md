@@ -40,7 +40,7 @@ status bar:
 
 ### Part 1 - VSCode + MicroPython Setup
 
-> James and I followed the [Day 1 Guide](docs/pihut-advent-calendar-day1-vscode-setup.md) highlights follow.
+> James and I worked through the [Day 1 Guide](docs/pihut-advent-calendar-day1-vscode-setup.md) together. Key steps below.
 
 ![Onboard LED lit up on the Pico H](docs/images/onboard-led.jpg)
 
@@ -57,7 +57,7 @@ status bar:
 
 ### Part 2 - Let's Get Blinky
 
-> James worked through the [Day 2 Guide](docs/pihut-advent-calendar-day2-vscode-blinky.md) - summarised briefly below.
+> James worked through the [Day 2 Guide](docs/pihut-advent-calendar-day2-vscode-blinky.md). Key steps below.
 
 
 ![Completed Day 2 circuit with three LEDs wired to the Pico](docs/images/day2-complete-circuit.jpg)
