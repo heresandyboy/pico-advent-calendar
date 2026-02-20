@@ -31,7 +31,7 @@ electronics - no Thonny required.
 With the Pico connected via USB and **Pico Connected** showing in the VSCode
 status bar:
 
-- **▶ Run on Pico:** Click the `Run` button in the status bar, or
+- ** Run on Pico:** Click the `▶ Run` button in the status bar, or
   `Ctrl+Shift+P` > **MicroPico: Run current file on Pico**
 - **Stop execution:** Click the Stop button, or
   `Ctrl+Shift+P` > **MicroPico: Stop execution**
