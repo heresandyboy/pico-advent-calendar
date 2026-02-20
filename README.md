@@ -36,24 +36,34 @@ status bar:
 - **Stop execution:** Click the Stop button, or
   `Ctrl+Shift+P` > **MicroPico: Stop execution**
 
-## Progress
+## James' Progress
 
-### Day 1 - VSCode + MicroPython Setup
+### Part 1 - VSCode + MicroPython Setup
+
+![Onboard LED lit up on the Pico H](docs/images/onboard-led.jpg)
+
 - Flashed MicroPython firmware onto the Pico H
 - Installed VSCode and the MicroPico extension
-- Connected to the Pico from VSCode and ran a first script
+- Connected to the Pico from VSCode and ran [`hello.py`](hello.py) and
+  [`led.py`](led.py) — turning on the built-in LED on the Pico, then figuring
+  out what code to change to switch it on and off: `onboardLED.value(0)` vs
+  `onboardLED.value(1)`
 
-### Day 2 - Let's Get Blinky
+### Part 2 - Let's Get Blinky
+
+![Completed Day 2 circuit with three LEDs wired to the Pico](docs/images/day2-complete-circuit.jpg)
+
 - Built the circuit: three LEDs with current-limiting resistors wired to GPIO
   pins 18, 19, and 20
-- Ran `blinky.py` to light all three LEDs at once
+- Ran [`blinky.py`](blinky.py) to light all three LEDs at once
 - Identified which GPIO pin controlled which LED colour by commenting out two
   of the three LED lines, running the script to light a single LED, noting its
   colour, then repeating for each — correctly naming each variable by its
   colour in the code
-- Ran `flash.py` to flash all LEDs on and off 10 times using a `while` loop
-- Ran `chase.py` to sequence the LEDs one at a time in a red → amber → green
-  chase effect
+- Ran [`flash.py`](flash.py) to flash all LEDs on and off 10 times using a
+  `while` loop
+- Ran [`chase.py`](chase.py) to sequence the LEDs one at a time in a
+  red → amber → green chase effect
 
 ## Credits
 
