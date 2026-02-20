@@ -1,5 +1,7 @@
 # Pi Hut Maker Advent Calendar - VSCode Edition
 
+> **[Jump to James' Progress](#james-progress)**
+
 A VSCode-based adaptation of the
 [Pi Hut Maker Advent Calendar 2022](https://thepihut.com/pages/maker-advent-2022-guides)
 tutorials, reworked to use **VSCode + MicroPico** instead of Thonny.
@@ -35,6 +37,8 @@ status bar:
   `Ctrl+Shift+P` > **MicroPico: Run current file on Pico**
 - **Stop execution:** Click the Stop button, or
   `Ctrl+Shift+P` > **MicroPico: Stop execution**
+
+<a id="james-progress"></a>
 
 ## James' Progress
 
